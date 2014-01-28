@@ -73,7 +73,7 @@ class Switch(DatagramServer):
 
     def open_channel(self, hash_name, ctype, initial_data=None):
         ch = gevent.spawn(self.dht.open_channel,
-                          hn, cytpe, initial_data)
+                          hash_name, ctype, initial_data)
         ch.get(timeout=5)
         return ch
 
