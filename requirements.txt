@@ -2,3 +2,4 @@ PyTomCrypt>=0.9.0
 simplejson
 cython
 gevent>=1.0
+bitarray
